@@ -1,20 +1,99 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой первый лендинг</title>
-    <!-- Подключаем CSS -->
+    <title> DevPortfolio</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-</head>
+  </head>
 <body>
+  <header class="header">
 
-    <h1>Привет, мир!</h1> 
+    <div class="header-left">
+      <img src="images/logo.png" alt="logo" class="logo-img">
+    </div>
 
-    <p>Это мой первый лендинг</p>  
-    
+    <nav class="header_nav">
+      <ul>
+        <li>
+          <a href="#about ">О себе</a>
+          </li>
+        <li>
+          <a href="#projects ">Проекты</a>
+          </li>
+        <li>
+          <a href="#contact ">Контакты</a>
+          </li>
+      </ul>
+    </nav>
+  </header>
+    <section class="hero" id="hero">
+        <div class="hero-card">
+            <span class="hero-badge">Привет я Дима</span>
+            <h1 class="hero-title">Frontend Developer, создающий современные веб-интерфейсы</h1>
+            <p class="hero-description">
+                Специализируюсь на верстке, интерактивных пользовательских интерфейсах и чистом коде. Готов к сложным и интересным проектам.
+            </p>
+        </div>
+        <div class="section-image">
+            <img src="images/technical-skills.png" alt="Hero Image">
+        </div>
+    </section>
 
-    <!-- Подключаем JS -->
-    <script src="script.js"></script>
+    <section class="projects" id="projects">
+        <div class="section-image">
+            <img src="images/hero-rocket.png" alt="Проекты">
+        </div>
+        <div class="projects-card">
+            <span class="projects-badge">План на 1-й месяц</span>
+            <h2>Проекты на первый месяц</h2>
+            <p>HTML, CSS & JavaScript</p>
+            <p>План разработки и обучения, составленный совместно с ментором. Все проекты верстаются на чистом коде и загружаются на GitHub через Git CLI:</p>
+            <ul class="projects-list">
+                <li><strong>Проект 1:</strong> Лендинг-визитка портфолио</li>
+                <li><strong>Проект 2:</strong> Клон сайта <code>roadmap.sh</code> — точность в пиксель (Pixel Perfect).</li>
+                <li><strong>Проект 3:</strong> Калькулятор на чистом JS (арифметика, скобки и приоритет операций).</li>
+            </ul>
+        </div>
+    </section>
+
+  <section class="about" id="about">
+    <div class="about-card">
+        <span class="about-badge">О себе</span>
+        <h2 class="about-title">Мой путь</h2>
+        <p class="about-description">
+            Мне 19 лет, родом из Украины, из города Полтава. После школы уехал в Польшу и 2 года работал на заводе. В какой-то момент всё надоело, решил круто изменить жизнь и начал увлеченно изучать Frontend-разработку!
+        </p>
+    </div>
+    <div class="section-image">
+        <img src="images/international-experience.png" alt="Мой путь">
+    </div>
+</section>
+
+  <footer class="footer" id="contact">
+    <div class="footer-content">
+      <div class="footer-left">
+          <h3>Dymytrii Tsarenko</h3>
+
+          <p>Frontend Developer</p>
+      </div>
+
+      <div>
+        <class="footer-center"></p>Сайт сверстан на HTML5 & CSS3></p>
+      </div>
+      
+      <div class="footer-right">
+
+          <a href="https://t.me/kuchrz1" target="_blank" rel="noopener noreferrer">Telegram</a>
+
+          <a href="https://github.com/DymytriiTsarenko" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+      </div>
+  </footer>
+  
+  
 </body>
 </html>
