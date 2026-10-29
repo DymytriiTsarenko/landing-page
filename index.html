@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DevPortfolio</title> 
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <header class="header">
+
+    <div class="header-left">
+      <img src="images/logo.png" alt="logo" class="logo-img">
+    </div>
+
+    <nav class="header_nav">
+      <ul>
+        <li>
+         <a href="#about" data-i18n="nav-about">About</a>
+          </li>
+        <li>
+          <a href="#projects" data-i18n="nav-projects">Projects</a>
+          </li>
+        <li>
+          <a href="#contact" data-i18n="nav-contact">Contact</a>
+          </li>
+      </ul>
+    </nav>
+    <div class="lang-switch">
+     <button onclick="changeLanguage('en')">EN</button>
+     <button onclick="changeLanguage('pl')">PL</button>
+     <button onclick="changeLanguage('ua')">UA</button>
+     <button onclick="changeLanguage('ru')">RU</button>
+    </div>
+    
+  </header>
+    <section class="hero" id="hero">
+        <div class="hero-card">
+            <span class="hero-badge" data-i18n="hero-badge">Hi,I'm Dima</span>
+            <h1 class="hero-title" data-i18n="hero-title">Frontend developer, who creates modern web interfaces</h1>
+            <p class="hero-description" data-i18n="hero-desc">
+                I specialize in web layout, interactive user interfaces, and clean code. I am ready for challenging and interesting projects.
+            </p>
+        </div>
+        <div class="section-image">
+            <img src="images/technical-skills.png" alt="Hero Image">
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="section-image">
+            <img src="images/hero-rocket.png" alt="Проекты">
+        </div>
+        <div class="projects-card">
+            <span class="projects-badge" data-i18n="projects-badge">Plan for the 1st month</span>
+            <h2 data-i18n="projects-title">Projects for the first month</h2>
+            <p data-i18n="projects-sub">HTML, CSS & JavaScript</p>
+            <p data-i18n="projects-text">A development and training plan, created in collaboration with a mentor. All projects are built using clean code and uploaded to GitHub via the Git CLI.:</p>
+            <ul class="projects-list">
+            <li data-i18n="p1-desc"><strong>Project 1:</strong> Portfolio landing page</li>
+            <li data-i18n="p2-desc"><strong>Project 2:</strong> roadmap.sh clone — Pixel Perfect</li>
+            <li data-i18n="p3-desc"><strong>Project 3:</strong> Pure JS Calculator</li>
+         </ul>
+            </ul>
+        </div>
+    </section>
+
+  <section class="about" id="about">
+    <div class="about-card">
+        <span class="about-badge" data-i18n="about-badge">About me</span>
+        <h2 class="about-title" data-i18n="about-title"> My way</h2>
+        <p class="about-description" data-i18n="about-desc">
+          I am <span id="age">19</span> years old and originally from Poltava, Ukraine. After finishing school, I moved to Poland and spent two years working in a factory. At a certain point, I grew tired of it all; I decided to make a major change in my life and began enthusiastically studying frontend development!
+        </p>
+    </div>
+    <div class="section-image">
+        <img src="images/international-experience.png" alt="Мой путь">
+    </div>
+</section>
+
+  <footer class="footer" id="contact">
+    <div class="footer-content">
+      <div class="footer-left">
+          <h3>Dymytrii Tsarenko</h3>
+
+          <p data-i18n="footer-role">Frontend Developer</p>
+      </div>
+
+      <div>
+        <class="footer-center">
+         <p data-i18n="footer-text">The site is built using HTML5 & CSS3</p>
+      </div>
+      
+      <div class="footer-right">
+
+          <a href="https://t.me/kuchrz1" target="_blank" rel="noopener noreferrer">Telegram</a>
+
+          <a href="https://github.com/DymytriiTsarenko" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+      </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
